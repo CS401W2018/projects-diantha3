@@ -1,0 +1,20 @@
+header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: #D7C6B6;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+
+footer {
+    color:black;
+    font-weight: 900;
+}
+
