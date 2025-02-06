@@ -1,17 +1,45 @@
-header {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
 body {
     background-color: #D7C6B6;
     font-family: 'Times New Roman', Times, serif;
 }
 
+header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#blue {
+    color: rgb(70, 43, 226);
+}
+
+p {
+    color: #0f2862;
+}
+
+.emphasize {
+    font-style: oblique;
+}
 .underline {
     text-decoration: underline;
 }
 
+.bold {
+    color:#091f36
+}
+.light {
+    color: #4f5f76;
+}
+.bluepopsicle {
+    color: #0f2862;
+}
 
+dt {
+    color:  #091f36;
+    font-size: 13pt;
+}
+
+dd {
+    color: #4f5f76;
+}
 
 footer {
     color:black;
