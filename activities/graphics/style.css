@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wave {
+    width: 50%;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.temple {
+    width: 50%;
+}

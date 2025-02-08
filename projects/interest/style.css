@@ -16,6 +16,7 @@ p {
 }
 
 .emphasize {
+    color: black;
     font-style: oblique;
 }
 .underline {
