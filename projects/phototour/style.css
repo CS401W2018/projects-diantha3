@@ -1,7 +1,11 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background-image: url(background.jpg); color: coral;
-    background-image: url('flag.jpg');
+    background-color: gray;
+    background-image: url(background.jpg);
+}
+
+#background {
+    background-image: url(flag.jpg);
     background-repeat: no-repeat;
     background-position: top right;
 }
@@ -16,4 +20,8 @@ h2 {
 
 .black {
     color: black;
+}
+
+.mylist {
+    list-style-image: url(iconmerlion.jpg);
 }
