@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: aqua;
+    padding: 0 0 0; /*height width right left*/
+    margin-bottom: 25px;
+    width: 80%;
+    overflow: visible;
+}
+
+header h1 {
+    border: 5px dotted rgb(13, 11, 11)
+}
+main h1{
+    background-color: aquamarine;
+}
+main h2 {
+    background-color: blueviolet;
+    padding 
+}
+.uss {
+    width: 100px;
+    border: thin
+}
+
+.uss img {
+    width: 100%;
+}
