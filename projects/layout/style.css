@@ -14,7 +14,6 @@ header h1 {
     text-align: center;
     text-transform: uppercase;
     text-shadow: 2px 2px gray;
-    line-height: ;
     color: #fff;
     border-bottom: 0;
     border-width: 5px;
@@ -47,6 +46,7 @@ nav a:hover {
 }
 #wrapper {
     background-color: white;
+    height: auto;
     width: 900px;
     margin: 10px auto;
     border: thin solid black;
