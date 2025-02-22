@@ -4,11 +4,23 @@ body {
 }
 
 header {
-    background-color: #3498db;
-    width: 300px;
-    margin: 30px auto;
-    
+    background-color: #154360;
+    margin: 30px;
+    padding: 10px 30px;
+    box-shadow: 20px 20px 30px yellowgreen;
+}
 
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px gray;
+    line-height: ;
+    color: #fff;
+    border-bottom: 0;
+    border-width: 5px;
+    border-color: rgb(154, 205, 50);
+    border-style: solid;
+    border-radius: 50px;
 }
 
 .clear {
@@ -17,27 +29,70 @@ header {
 
 nav a {
     display: block;
-    padding: 5px 10px;
-    background-color: rgb(60, 114, 96);
-    margin;
+    border-style: solid black;
+    padding: 5px 25px;
+    background-color: rgb(21, 67, 96);
+    margin: 10px;
     color: white;
     text-decoration: none;
+    float: center;
     margin-right: 50px;
-    float: left;
+    float: inline-end;
 }
 
 nav a:hover {
-    color:  rgb(60, 114, 96);
-    background-color: white;
+    color:  rgb(21, 67, 96);
+    background-color: #9acd32;
     text-decoration: underline;
 }
 #wrapper {
     background-color: white;
     width: 900px;
-    margin: 0 auto;
+    margin: 10px auto;
     border: thin solid black;
     /* border-radius: 20px; */
 }
 main {
     font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: medium;
+    margin-left: 10px;
+    font-style: oblique;
+    line-height: normal;
+}
+
+.strong {
+    font-weight: bold;
+    font-size: large;
+}
+.end {
+    clear: both;
+}
+
+.pic {
+    float: right;
+}
+
+figure {
+    border: thin solid rgb(21, 67, 96);
+    width: 200px;
+    box-shadow: 10px 10px 10px black;
+}
+
+img {
+    width: 200px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    color: #fff;
+    background-image: url(watermark.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 25px;
 }
