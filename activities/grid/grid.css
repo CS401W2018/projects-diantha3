@@ -1,0 +1,17 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.parent {
+    background-color: rgb(23, 60, 70);
+    padding: 10px;
+    display: grid;
+    /* grid-template-columns: 50px 50px 50px; */
+    grid-template-columns: 33% 33% 33%;
+    /* grid-template-columns: 1fr 10fr 1fr; */
+    gap: 5px;
+}
+
+.child {
+    background-color: rgb(70, 50, 100);
+}
