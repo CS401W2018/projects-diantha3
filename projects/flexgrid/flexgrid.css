@@ -7,112 +7,108 @@ body {
 }
 
 header {
-    background-color: blue;
-    color: black;
-    padding: 20px;
+    background-color: #4cb69f;
+    color: #f5f5f5;
+    padding: 25px;
     text-align: center;
-    font-family: 'Press Start 2P', cursive ;
-    font-size: 35px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: greenyellow;
+    background-color: rgb(170, 245, 197);
     padding: 15px;
 }
 
 nav a {
-    text-decoration: ;
-    color: ;
-    margin: ;
-    padding: ;
-    display: ;
-    font-family: ;
-    font-weight: ;
-    font-size: ;
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    padding: 10px;
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
 
 }
 
 nav a:hover {
-    color: ;
+    color: rgb(76, 182, 159);
 }
 
 .box {
-    display: ;
-    margin: ;
+    display: flex;
+    margin: 20px;
 }
 
 aside {
-    width: ;
-    background-color: ;
-    padding: ;
-    box-shadow: ;
-    font-family: ;
+    width: 30%;
+    background-color: #daefd9;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
 }
 
 main {
-    width: ;
-    display: ;
-    grid-template-columns: ;
-    gap: ;
-    padding: ;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
 .cards {
-    border: ;
-    background-color: ;
-    padding: ;
-    box-shadow: ;
-    text-align: ;
-    transition: ;
+    border: 1px solid rgb(100, 100, 100);
+    background-color: #4cb69f;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+    text-align: center;
+    transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .cards img {
-    width: ;
-    height: ;
-    border-bottom: ;
+    width: 100%;
+    height: auto;
+    border-bottom: 5px;
 }
 
 .cards h3 {
-    color: ;
-    font-family: ;
-    margin: ;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 20px;
 }
 
 .cards p {
-    color: ;
-}
-
-.cards:hover {
-    transform: ;
-    box-shadow: ;
+    color: rgb(0, 0, 0);
 }
 
 footer {
-    background-color: ;
-    padding: ;
-    text-align: ;
-    color: ;
-    font-weight: ;
+    background-color: #4cb69f;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
 }
 
-.grid-box {
-    display: ;
-    grid-template-columns: ;
-    gap: ;
-    margin-bottom: ;
+.gridbox {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 footer a {
-    text-decoration: ;
-    color: ;
-    display: ;
-    padding: ;
-    border: ;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border: 1px solid rgb(170, 245, 197);
 }
 
-footer a hover {
-    background-color: ;
-    color: ;
+footer a:hover {
+    background-color: rgb(170, 245, 197);
+    color: #4cb69f;
 }
