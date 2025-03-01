@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-color: blue;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive ;
+    font-size: 35px ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: greenyellow;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: ;
+    color: ;
+    margin: ;
+    padding: ;
+    display: ;
+    font-family: ;
+    font-weight: ;
+    font-size: ;
+
+}
+
+nav a:hover {
+    color: ;
+}
+
+.box {
+    display: ;
+    margin: ;
+}
+
+aside {
+    width: ;
+    background-color: ;
+    padding: ;
+    box-shadow: ;
+    font-family: ;
+}
+
+main {
+    width: ;
+    display: ;
+    grid-template-columns: ;
+    gap: ;
+    padding: ;
+}
+
+.cards {
+    border: ;
+    background-color: ;
+    padding: ;
+    box-shadow: ;
+    text-align: ;
+    transition: ;
+}
+
+.cards img {
+    width: ;
+    height: ;
+    border-bottom: ;
+}
+
+.cards h3 {
+    color: ;
+    font-family: ;
+    margin: ;
+}
+
+.cards p {
+    color: ;
+}
+
+.cards:hover {
+    transform: ;
+    box-shadow: ;
+}
+
+footer {
+    background-color: ;
+    padding: ;
+    text-align: ;
+    color: ;
+    font-weight: ;
+}
+
+.grid-box {
+    display: ;
+    grid-template-columns: ;
+    gap: ;
+    margin-bottom: ;
+}
+
+footer a {
+    text-decoration: ;
+    color: ;
+    display: ;
+    padding: ;
+    border: ;
+}
+
+footer a hover {
+    background-color: ;
+    color: ;
+}
