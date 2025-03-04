@@ -1,0 +1,36 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+header {
+    background-color: pink;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgba(40, 40, 40, 0.5);
+    width: 250px;
+    margin: 10px;
+}
+
+.card figure {
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+}
