@@ -24,7 +24,3 @@ body {
     background-color: burlywood;
     color: white;
 }
-
-.data tr:nth-chid(even) {
-    background-color: antiquewhite;
-}
