@@ -1,0 +1,30 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.data {
+    border: 3px solid black;
+    caption-side: bottom;
+    border-spacing: 10px;
+    border-collapse: collapse;
+    box-shadow: 3px 3px 3px rgba(50, 50, 50, 0.5);
+}
+
+.data th, .data td {
+    border: thick solid #000;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.data tr {
+    background-color: lightblue;
+}
+
+.data thead tr {
+    background-color: burlywood;
+    color: white;
+}
+
+.data tr:nth-chid(even) {
+    background-color: antiquewhite;
+}
