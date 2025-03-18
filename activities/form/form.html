@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="post">
+            <div class="form-row">
+                <label for="fullname">Full Name:</label>
+                <input type="text" name="fullname" required="required" placeholder="Full Name" id="fullname">
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="text" name="email" value="diantha3@go.byuh.edu" placeholder="ex:email@gmail.com" id="email">
+            </div>
+            <div>
+                <label for="pass">Password:</label>
+                <input type="password" name="password" id="pass">
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="blank"></option>
+                    <option value="CO">Colorado</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div>
+                <label for="year">Year in School</label>
+                <label><input type="radio" name="year" values="Freshman"> Freshman</label>
+                <label><input type="radio" name="year" values="Sophomore"> Sophomore</label>
+
+
+                </label>
+            </div>
+            <div class="form-row">
+                <input type="submit">
+            </div>
+        </form>
+
+        <h2> Engagement Monday</h2>
+        <p>1. It specifies where to send the form-data when a form is submitted.</p>
+        <p>2. The method attribute specifies how to send from-data.</p>
+        <p>3. Get used when we want to retrieve data, while Post used when we want to submit data.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Diantha Nugraha</p>
+    </footer>
+</body>
+</html>
