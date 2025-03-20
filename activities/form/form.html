@@ -4,51 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <header>
         <h1>Web Design</h1>
     </header>
     <main>
-        <form action="processing.html" method="post">
-            <div class="form-row">
-                <label for="fullname">Full Name:</label>
-                <input type="text" name="fullname" required="required" placeholder="Full Name" id="fullname">
-            </div>
-            <div class="form-row">
-                <label for="email">Email:</label>
-                <input type="text" name="email" value="diantha3@go.byuh.edu" placeholder="ex:email@gmail.com" id="email">
-            </div>
-            <div>
-                <label for="pass">Password:</label>
-                <input type="password" name="password" id="pass">
-            </div>
-            <div>
-                <label for="state">State:</label>
-                <select name="state" id="state">
-                    <option value="blank"></option>
-                    <option value="CO">Colorado</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="UT">Utah</option>
-                </select>
-            </div>
-            <div>
-                <label for="year">Year in School</label>
-                <label><input type="radio" name="year" values="Freshman"> Freshman</label>
-                <label><input type="radio" name="year" values="Sophomore"> Sophomore</label>
-
-
-                </label>
-            </div>
-            <div class="form-row">
-                <input type="submit">
-            </div>
+        <form action="processing.html" method="get">
+            <fieldset>
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fullname" required="required" placeholder="Full Name" id="fullname">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" value="diantha3@go.byuh.edu" placeholder="ex:email@gmail.com" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="password" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="CO">Colorado</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer">Year in School:</div>
+                    <label><input type="radio" name="year" values="Freshman"> Freshman</label>
+                    <label><input type="radio" name="year" values="Sophomore" checked> Sophomore</label>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer"></div>
+                    <label><input type="chechbox" name="agree" id="agree" checked>Remember Me</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <input type="submit">
+                </div>
+            </fieldset>
         </form>
 
         <h2> Engagement Monday</h2>
         <p>1. It specifies where to send the form-data when a form is submitted.</p>
         <p>2. The method attribute specifies how to send from-data.</p>
         <p>3. Get used when we want to retrieve data, while Post used when we want to submit data.</p>
+
+        <h2> Engagement Wednesday</h2>
+        <p>1. We can use CSS, then use text align to line up the text form.</p>
+        <p>2. Because flex can wrap the size automatically according to the device.</p>
     </main>
     <footer>
         <p>&copy; 2025 Diantha Nugraha</p>
