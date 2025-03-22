@@ -35,7 +35,7 @@ input[type='submit'] {
     background-color: lightseagreen;
     color: white;
     border-radius: 5px;
-    box-shadow: 5px 5px 3px rgb(from color r g b);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
 }
 fieldset {
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
