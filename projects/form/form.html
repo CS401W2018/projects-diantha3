@@ -5,55 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Page</title>
     <link rel="stylesheet" href="form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header>
         <h1>Form</h1>
     </header>
     <main>
-        <form action="processing.html" method="get">
+        <form action="processing.php" method="post">
             <fieldset>
+                <legend>Sign Up</legend> 
                 <div class="form-row">
                     <label for="fullname">Full Name:</label>
-                    <input type="text" name="fullname" required="required" placeholder="Full Name" id="fullname">
+                    <input type="text" name="lastname" required="required" placeholder="Last Name" id="lastnameInput">
+                    <input type="text" name="firstname" required="required" placeholder="First Name" id="firstnameInput">
+                    <input type="text" name="middlename" required="option" placeholder="Middle Name (optional)" id="middlenameInput">
                 </div>
                 <div class="form-row">
                     <label for="email">Email: </label>
-                    <input> type
+                    <input type="email" name="email" id="emailInput"> 
                 </div>
                 <div class="form-row">
                     <label for="pass">Password: </label>
-                    <input type="password" name="password" id="pass">
+                    <input type="password" name="password" id="password">
                 </div>
                 <div class="form-row">
-                    Gender: 
+                    <label for="phonenumber">Phone Number: </label>
+                    <input type="phonenumber" name="phonenumber" id="phonenumber">
+                </div>
+                <div class="form-row">
+                    <label for="birthdate">Birthdate: </label>
+                    <input type="date" name="birthdate" id="dateInput">
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Gender: </div> 
                     <label><input type="radio" name="gender" value="male"> Male</label>
-
+                    <label><input type="radio" name="gender"
+                    value="female"> Female</label>
                 </div>
                 <div class="form-row">
                     <label for="state">State: </label>
                     <select name="state" id="state">
                         <option value="blank"></option>
-                        <option value="CO">Colorado</option>
+                        <option value="ID">Idaho</option>
                         <option value="HI">Hawaii</option>
                         <option value="UT">Utah</option>
                     </select>
                 </div>
-                <div class="radio-row">
-                    <div class="form-spacer">Year in School: </div>
+                <div class="check-row">
+                    <div class="spacer">Year in School: </div>
                     <label><input type="radio" name="year" values="Freshman"> Freshman</label>
                     <label><input type="radio" name="year" values="Sophomore" checked> Sophomore</label>
+                    <label><input type="radio" name="year" values="Junior" checked> Junior</label>
+                    <label><input type="radio" name="year" values="Senior" checked> Senior</label>
                 </div>
-                <div class="radio-row">
-                    <div class="form-spacer"></div>
-                    <label><input type="chechbox" name="agree" id="agree" checked>Remember Me</label>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" name="agree" value="on" checked>I agree to the terms.</label>
                 </div>
                 <div class="form-row">
-                    <label for="comments">Comments:</label>
+                    <label for="comments">Comments: </label>
                     <textarea name="comments" id="comments"></textarea>
                 </div>
                 <div class="form-row">
-                    <input type="submit">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Submit">
                 </div>
             </fieldset>
         </form>
