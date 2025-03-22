@@ -9,33 +9,31 @@
 </head>
 <body>
     <header>
-        <h1>Form</h1>
+        <h1>Form</h1> 
     </header>
     <main>
         <form action="processing.php" method="post">
             <fieldset>
                 <legend>Sign Up</legend> 
                 <div class="form-row">
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" name="lastname" required="required" placeholder="Last Name" id="lastnameInput">
-                    <input type="text" name="firstname" required="required" placeholder="First Name" id="firstnameInput">
-                    <input type="text" name="middlename" required="option" placeholder="Middle Name (optional)" id="middlenameInput">
+                    <label for="fullname">Full Name: </label>
+                    <input type="text" name="fullname" required="required" placeholder="Full Name" id="fullname">
                 </div>
                 <div class="form-row">
                     <label for="email">Email: </label>
-                    <input type="email" name="email" id="emailInput"> 
+                    <input type="email" name="email" id="email"> 
                 </div>
                 <div class="form-row">
                     <label for="pass">Password: </label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="pass">
                 </div>
                 <div class="form-row">
-                    <label for="phonenumber">Phone Number: </label>
-                    <input type="phonenumber" name="phonenumber" id="phonenumber">
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" name="phone" id="phone">
                 </div>
                 <div class="form-row">
                     <label for="birthdate">Birthdate: </label>
-                    <input type="date" name="birthdate" id="dateInput">
+                    <input type="date" name="birthdate" id="birthdate">
                 </div>
                 <div class="check-row">
                     <div class="spacer">Gender: </div> 
@@ -46,7 +44,7 @@
                 <div class="form-row">
                     <label for="state">State: </label>
                     <select name="state" id="state">
-                        <option value="blank"></option>
+                        <option value="blank"> </option>
                         <option value="ID">Idaho</option>
                         <option value="HI">Hawaii</option>
                         <option value="UT">Utah</option>
@@ -54,10 +52,10 @@
                 </div>
                 <div class="check-row">
                     <div class="spacer">Year in School: </div>
-                    <label><input type="radio" name="year" values="Freshman"> Freshman</label>
-                    <label><input type="radio" name="year" values="Sophomore" checked> Sophomore</label>
-                    <label><input type="radio" name="year" values="Junior" checked> Junior</label>
-                    <label><input type="radio" name="year" values="Senior" checked> Senior</label>
+                    <label><input type="radio" name="year"> Freshman</label>
+                    <label><input type="radio" name="year"> Sophomore</label>
+                    <label><input type="radio" name="year"> Junior</label>
+                    <label><input type="radio" name="year"> Senior</label>
                 </div>
                 <div class="check-row">
                     <div class="spacer"></div>
