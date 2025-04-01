@@ -39,7 +39,7 @@ document.getElementById("theForms").addEventListener("submit", function(event) {
     console.log(formData);
 
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "/projects-diantha3/projects/forms/submit.json", true);
+    xhr.open("GET", "submit.json", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
