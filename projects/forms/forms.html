@@ -11,24 +11,25 @@
         <h1>Form Registration</h1> 
     </header>
     <main>
-        <form action="processing.php" method="post" id="theForms">
+        <div id="message"></div>
+        <form action="processing.php" method="get" id="theForms">
             <fieldset>
                 <legend>Register</legend> 
                 <div class="form-row">
                     <label for="fullname">Full Name: </label>
-                    <input type="text" name="fullname" required="required" placeholder="Full Name" id="fullname">
+                    <input type="text" name="fullname" required="required" placeholder="Enter your full name" id="fullname">
                 </div>
                 <div class="form-row">
                     <label for="email">Email: </label>
-                    <input type="email" placeholder="...@gmail.com" id="email"> 
+                    <input type="email" name="email" required="required" placeholder="...@gmail.com" id="email"> 
                 </div>
                 <div class="form-row">
                     <label for="pass">Password: </label>
-                    <input type="password" name="password" id="pass">
+                    <input type="password" name="password" required="required" id="pass">
                 </div>
                 <div class="form-row">
                     <label for="phone">Phone Number: </label>
-                    <input type="tel" name="phone" placeholder="(808)-..." id="phone">
+                    <input type="tel" name="phone" required="required" placeholder="(808)-..." id="phone">
                 </div>
                 <div class="form-row">
                     <label for="birthdate">Birthdate: </label>
@@ -36,9 +37,9 @@
                 </div>
                 <div class="check-row">
                     <div class="spacer">Gender: </div> 
-                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="male" id="gender-male"> Male</label>
                     <label><input type="radio" name="gender"
-                    value="female"> Female</label>
+                    value="female" id="gender-female"> Female</label>
                 </div>
                 <div class="form-row">
                     <label for="state">State: </label>
@@ -51,14 +52,14 @@
                 </div>
                 <div class="check-row">
                     <div class="spacer">Year in School: </div>
-                    <label><input type="radio" name="year"> Freshman</label>
-                    <label><input type="radio" name="year"> Sophomore</label>
-                    <label><input type="radio" name="year"> Junior</label>
-                    <label><input type="radio" name="year"> Senior</label>
+                    <label><input type="radio" name="year" value="freshman" id="year-freshman"> Freshman</label>
+                    <label><input type="radio" name="year" value="sophomore" id="year-sophomore"> Sophomore</label>
+                    <label><input type="radio" name="year" value="junior" id="year-junior"> Junior</label>
+                    <label><input type="radio" name="year" value="senior" id="year-senior"> Senior</label>
                 </div>
                 <div class="check-row">
                     <div class="spacer"></div>
-                    <label><input type="checkbox" name="agree" value="on" checked>I agree to the terms.</label>
+                    <label><input type="checkbox" name="agree" id="agree" required="required">I agree to the terms.</label>
                 </div>
                 <div class="form-row">
                     <label for="comments">Comments: </label>
@@ -66,7 +67,7 @@
                 </div>
                 <div class="form-row">
                     <div class="spacer"></div>
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" id="submit">
                 </div>
             </fieldset>
         </form>
@@ -74,11 +75,7 @@
     <footer>
         <p>&copy; 2025 Diantha Nugraha</p>
     </footer>
-    <script>
-        document.getElementById("theForms").addEventListener("submit", function(event) {
-            event.preventDefault();
-            alert("Congratulations! You have been registered.");
-        })
+    <script src="forms.js">
     </script>
     
 </body>
