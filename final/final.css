@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(22, 33, 70);
+    background-color: rgb(36, 54, 113);
     color: white;
 }
 
@@ -57,11 +57,15 @@ main {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+main h2 {
+    text-align: center;
+}
+
 .feature {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgb(22, 33, 70 );
+    background-color: rgb(36, 54, 113);
     color: white;
     padding: 2em;
     gap: 2em;
@@ -93,6 +97,85 @@ main {
     line-height: 1.6;
 }
 
+.info {
+    border: 3px solid black;
+    caption-side: top;
+    border-spacing: 10px;
+    border-collapse: collapse;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.info th, .info td {
+    border: thick solid black;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.info thead tr {
+    background-color: rgb(22, 33, 70 );
+    color: whitesmoke;
+}
+
+.info tr {
+    background-color: white;
+    color: #162146;
+}
+
+.side {
+    display: flex;
+    max-width: 25%;
+    background-color: #162146;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.side h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.side-name {
+    font-size: 1.4em;
+    color: black;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.sidebar figure img {
+    display: flex;
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+
+aside img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+} */
+
+.decor-img {
+    flex: 1 1 100px;
+    width: 100%;
+}
+
 footer {
     text-align: center;
     padding: 20px 1em;
@@ -102,8 +185,10 @@ footer {
     margin-top: 30px;
     border-radius: 0;
     box-sizing: border-box;
-    border: 2px solid #cbcbcb
+    border: 2px solid #cbcbcb;
+    background-color: #162146;
 }
+
 
 @media ONLY screen AND (max-width: 750px) {
     header {
