@@ -48,6 +48,11 @@ nav a:hover {
     text-decoration: none;
 }
 
+main {
+    text-align: center;
+
+}
+
 .feature {
     display: flex;
     flex-direction: row;
