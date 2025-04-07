@@ -185,4 +185,8 @@ footer {
     .feature {
         order: -1;
     }
+
+    footer {
+        max-width: 100%;
+    }
 }
