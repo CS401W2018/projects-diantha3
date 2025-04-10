@@ -1,32 +1,38 @@
 document.getElementById("forms").addEventListener("submit", function(event) {
     event.preventDefault();
-
     const name = document.getElementById("name").value;
     const age = document.getElementById("age").value;
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
     const patronus = document.getElementById("patronus").value;
 
-
-    if (!name || !age || !email || !phone) {
-        alert("Please fill in Name, Age, Email, and Phone.");
+    if (!name) {
+        alert("Please provide your name.");
         return;
     }
 
-    if (!agree) {
-        alert("You must agree to the policies.");
-        return
+    if (!age) {
+        alert("Please provide your age.");
+        return;
     }
 
-    const formData = {
-        name,
-        age,
-        email,
-        phone,
-        patronus
-    };
+    if (!email) {
+        alert("Please provide your email.");
+        return;
+    }
 
-    console.log(formData);
+    if (!phone) {
+        alert("Please provide your phone number.");
+        return;
+    }
+
+    const data = {
+        name: name,
+        age: age,
+        email: email,
+        phone: phone,
+        patronus: patronus
+    }
 
     const xhr = new XMLHttpRequest();
     xhr.open("POST", "submit.json", true);
@@ -35,11 +41,12 @@ document.getElementById("forms").addEventListener("submit", function(event) {
         if (xhr.readyState === 4 && xhr.status === 200) {
             const response = JSON.parse(xhr.responseText);
             document.getElementById("message").innerHTML = response.message;
-            document.getElementById("forms").innerHTML = "";
+            document.getElementById("forms").innerHTML = ""
         } else if (xhr.readyState === 4) {
-            alert("There was an error processing your form.")
+            alert('Error submitting form.');
         }
     };
-
-    xhr.send(JSON.stringify(formData));
-})
+    xhr.send(JSON.stringify(data));
+    console.log(data);
+    
+});
