@@ -9,7 +9,7 @@ document.getElementById("forms").addEventListener("submit", function(event) {
 
 
     if (!name || !age || !email || !phone) {
-        alert("Please fill in Full Name, Email, and Password.");
+        alert("Please fill in Name, Age, Email, and Phone.");
         return;
     }
 
@@ -35,7 +35,7 @@ document.getElementById("forms").addEventListener("submit", function(event) {
         if (xhr.readyState === 4 && xhr.status === 200) {
             const response = JSON.parse(xhr.responseText);
             document.getElementById("message").innerHTML = response.message;
-            document.getElementById("theForms").innerHTML = "";
+            document.getElementById("forms").innerHTML = "";
         } else if (xhr.readyState === 4) {
             alert("There was an error processing your form.")
         }
