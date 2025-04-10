@@ -35,18 +35,18 @@ document.getElementById("forms").addEventListener("submit", function(event) {
     }
 
     const xhr = new XMLHttpRequest();
-    xhr.open("", "submit.json", true);
+    xhr.open("post", "submit.json", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             const response = JSON.parse(xhr.responseText);
             document.getElementById("message").innerHTML = response.message;
-            document.getElementById("forms").innerHTML = ""
+            document.getElementById("forms").innerHTML = "";
         } else if (xhr.readyState === 4) {
             alert('Error submitting form.');
         }
     };
-    // xhr.send(JSON.stringify(data));
-    // console.log(data);
+    xhr.send(JSON.stringify(data));
+    console.log(data);
 
 });
