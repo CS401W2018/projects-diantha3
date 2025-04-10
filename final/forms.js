@@ -35,7 +35,7 @@ document.getElementById("forms").addEventListener("submit", function(event) {
     }
 
     const xhr = new XMLHttpRequest();
-    xhr.open("post", "submit.json", true);
+    xhr.open("", "submit.json", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
@@ -46,7 +46,7 @@ document.getElementById("forms").addEventListener("submit", function(event) {
             alert('Error submitting form.');
         }
     };
-    xhr.send(JSON.stringify(data));
-    console.log(data);
-    
+    // xhr.send(JSON.stringify(data));
+    // console.log(data);
+
 });
