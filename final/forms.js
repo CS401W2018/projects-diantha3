@@ -29,7 +29,7 @@ document.getElementById("forms").addEventListener("submit", function(event) {
     console.log(formData);
 
     const xhr = new XMLHttpRequest();
-    xhr.open("get", "submit.json", true);
+    xhr.open("POST", "submit.json", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
