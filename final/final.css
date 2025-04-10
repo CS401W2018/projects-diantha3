@@ -51,7 +51,7 @@ nav a:hover {
 main {
     text-align: center;
     background-image: url("background.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y
 
 }
 
