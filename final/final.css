@@ -60,7 +60,7 @@ main {
     flex-direction: row;
     align-items: center;
     color: white;
-    padding: 2em;
+    padding: 0;
     gap: 2em;
     flex-wrap: wrap;
     
@@ -74,11 +74,11 @@ main {
 }
 
 .feature-text {
-    flex: 1 1 400px;
+    flex: 1 1 300px;
     background: rgba(0, 0, 0, 0.5);
     padding: 1em;
     border-radius: 10px;
-    /* width: 100%; */
+    max-width: 100%;
 }
 
 ul {
@@ -103,6 +103,7 @@ ul {
     border-spacing: 10px;
     border-collapse: collapse;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    width: 100%;
     
 }
 
@@ -153,11 +154,6 @@ ul {
     background-color: white;
     color: #162146;
 }
-
-/* figure img {
-    height: 50%;
-    padding-top: 20px;
-} */
 
 .container {
     display: flex;
@@ -301,13 +297,56 @@ footer {
         background-color: rgb(22, 33, 70 );
         text-align: center;
     }
+
+    img {
+        width: 100%;
+        margin: 0;
+    }
     
     main aside {
         max-width: 100%;
     }
     
     .feature {
-        order: -1;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        /* width: 100%;
+        order: -1; */
+    }
+
+    .feature-img {
+        margin: 0;
+        width: 100%;
+    }
+
+    .feature-text {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .side {
+        width: 100%;
+        margin: 0;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .info th, .info td {
+        border: thick solid black;
+        padding: 10px;
+        vertical-align: middle;
     }
 
     footer {
